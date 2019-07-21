@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="colors.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Colors" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        
+        <!--Color1-->
+        <BoxView x:Name="boxColor" BackgroundColor="Black" HeightRequest="200"></BoxView>
+        <Label Margin="25,70,0,0" Text="Red"></Label>
+        <Slider x:Name="redSlider" Margin="15,0,0,0" ValueChanged="ChangeColor"></Slider>
+        
+        <!--Color2-->
+        <Label Margin="25,70,0,0" Text="Green"></Label>
+        <Slider x:Name="greenSlider" Margin="15,0,0,0" ValueChanged="ChangeColor"></Slider>
+        
+        <!--Color3-->
+        <Label Margin="25,50,0,0" Text="Blue"></Label>
+        <Slider x:Name="blueSlider" Margin="15,0,0,0" ValueChanged="ChangeColor"></Slider>
+        
+        
+        <Label Text="Valor Hexadecimal: " x:Name="lblDisplay" Margin="25,70,0,0"></Label>
+        
+    </StackLayout>
+</ContentPage>
